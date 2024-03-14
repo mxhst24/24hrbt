@@ -3,22 +3,23 @@ import React, {useEffect, useState} from 'react'
 import { btnData } from '../data/btnData'
 
 const BtnsContainer = () => {
-  const [customMargin, setCustomMargin] = useState(0);
+  const [customMargin, setCustomMargin] = useState(500);
 
   useEffect(() => {
     const imgHeight = document.querySelector('.titles').clientHeight;
     setCustomMargin(imgHeight);
-    console.log('1312312')
+    console.log(customMargin)
     window.addEventListener('resize', () => {
       const resizedHeight = document.querySelector('.titles').clientHeight;
       setCustomMargin(resizedHeight);
-      console.log('asdas')
+      console.log('assd')
+      console.log(customMargin)
     })
   },[])
 
   return (
     <div className='botonera' style={{marginTop: `${customMargin}px`}}>
-
+        <h2>LÍNEAS DE ATENCIÓN 24HS</h2>
         {btnData.map((btn, index) => {
             return <div key={index} className='btnData'>
                 <a id={btn.name} className='icon' href={btn.url} target='_blank' rel='noopener noreferrer'>

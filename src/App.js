@@ -7,7 +7,12 @@ function App() {
     <div className='landpage'>
       <div className='titles'>
         <img className='img-logo' src={require('./assets/landpage.png')} alt='img'/>
-        <h2>ATENCIÓN 24HS</h2>
+        <div className='info-titles'>
+          <p>Diversión sin límites</p>
+          <p>Atención personalizada</p>
+          <p>Pagos en el acto</p>
+          <p>Solicitá tu usuario sin cargo</p>
+        </div>
       </div>
       <BtnsContainer/>
     </div>

@@ -22,9 +22,25 @@
   justify-self: center;
   align-items: center;
 }
+.info-titles{
+  color: var(--light-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+.info-titles > p {
+  font-size: 1.3rem;
+}
+p{
+  margin: 0;
+  padding-bottom: 8px;
+}
 h2 {
   font-size: 2rem;
   color: var(--light-color);
+  text-align: center;
 }
 .img-logo{
   height: 230px;
@@ -52,10 +68,10 @@ h2 {
   display: flex;
   aspect-ratio: 1/1;
   transition: all 0.7s;
-  font-size: 10rem;
+  font-size: 7rem;
 }
 .url-text{
-  font-size: 4.4vw;
+  font-size: 2.6rem;
 }
 a{
   margin: 0;
@@ -90,7 +106,7 @@ a{
     width: 28%;
   }
   .landpage{
-    justify-content: space-evenly;
+    padding-top: 24px;
   }
   .img-logo{
     width: 80%;
