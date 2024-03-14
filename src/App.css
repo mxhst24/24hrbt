@@ -15,8 +15,8 @@
   background: linear-gradient(240deg, rgba(85,86,88,1) 0%, rgba(33,34,36,1) 100%);
 }
 .titles {
-  position: absolute;
-  top: 1%;
+  /* position: absolute;
+  top: 1%; */
   display: flex;
   flex-direction: column;
   justify-self: center;
@@ -47,11 +47,9 @@ h2 {
   width: auto;
 }
 .botonera {
-  margin-top: 240px;
   border-radius: 10px;
   width: fit-content;
   height: fit-content;
-  /* display: flex; */
   flex-direction: column;
   justify-content: space-around;
   align-items: center;

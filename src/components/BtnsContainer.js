@@ -1,24 +1,11 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 
 import { btnData } from '../data/btnData'
 
 const BtnsContainer = () => {
-  const [customMargin, setCustomMargin] = useState(500);
-
-  useEffect(() => {
-    const imgHeight = document.querySelector('.titles').clientHeight;
-    setCustomMargin(imgHeight);
-    console.log(customMargin)
-    window.addEventListener('resize', () => {
-      const resizedHeight = document.querySelector('.titles').clientHeight;
-      setCustomMargin(resizedHeight);
-      console.log('assd')
-      console.log(customMargin)
-    })
-  },[])
 
   return (
-    <div className='botonera' style={{marginTop: `${customMargin}px`}}>
+    <div className='botonera'>
         <h2>LÍNEAS DE ATENCIÓN 24HS</h2>
         {btnData.map((btn, index) => {
             return <div key={index} className='btnData'>
